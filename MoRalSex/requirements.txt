@@ -2,4 +2,4 @@ pandas
 numpy
 plotly
 seaborn
-mathplotlib==3.2.2
+matplotlib
