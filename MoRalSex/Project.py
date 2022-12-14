@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 # In[3]:
 
 
-data = pd.read_csv('https://github.com/ivanmash/DataProject/edit/main/MoRalSex/Project.py/oral_sex_eng_translation.csv')
+data = pd.read_csv('oral_sex_eng_translation.csv')
 
 
 st.header("The Dataset itself")
