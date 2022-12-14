@@ -40,19 +40,19 @@ st.write(data)
 # In[5]:
 
 
-st.write(data["Age"].mean())
+
 
 
 # In[6]:
 
 
-st.write(data["Age"].std())
+
 
 
 # In[7]:
 
 
-st.write(data["Age"].median())
+
 
 
 st.header("Data description")
@@ -66,18 +66,11 @@ st.write(data["Age"].describe())
 # In[9]:
 
 
-categories = [col for col in data.columns if data[col].dtype=='O']
-st.write(categories)
+
 
 
 # In[10]:
 
-
-uqique_categories_values={}
-for colm in categories:
-    uqique_categories_values[colm] = data[colm].unique()
-
-st.write(uqique_categories_values)
 
 
 st.header("Pretty clean, don’t you think?")
@@ -106,13 +99,12 @@ st.write(data)
 # In[14]:
 
 
-st.write(data["Difference in age from max"].describe())
+
 
 
 # In[15]:
 
 
-st.write(data["Difference in age from max"].median())
 
 
 st.header("Plots")
