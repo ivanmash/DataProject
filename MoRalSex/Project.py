@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+    #!/usr/bin/env python
 # coding: utf-8
 
 # In[ ]:
@@ -137,13 +137,13 @@ df34 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if 30 < x <= 
 df45 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if 40 < x <= 50])
 df56 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if 50 < x <= 60])
 df6 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if x > 60])
-colours = ['red', 'blue', 'green', 'yellow','purple', 'orange']
+
 
 
 # In[18]:
 
 
-fig = px.pie(data, values = [df12, df23, df34, df45, df56, df6], names = ["18-20", "20-30", "30-40", "40-50", "50-60", "60+"], title = "Age in percentage", color = colours)
+fig = px.pie(data, values = [df12, df23, df34, df45, df56, df6], names = ["18-20", "20-30", "30-40", "40-50", "50-60", "60+"], title = "Age in percentage", color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside')
 fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
 st.pyplot(fig)
@@ -198,7 +198,7 @@ st.header("In general, people mostly do anal sex and for them, it is not importa
 # In[22]:
 
 
-fig = px.pie(data, values = data["Sex"].value_counts(), names = data["Sex"].unique(), title = "Sex comparison")
+fig = px.pie(data, values = data["Sex"].value_counts(), names = data["Sex"].unique(), title = "Sex comparison", color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside')
 fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
 st.pyplot(fig)
