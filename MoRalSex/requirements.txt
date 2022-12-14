@@ -1,5 +1,6 @@
-pandas
+pandas~=1.5.2
 numpy
-plotly
+plotly~=5.9.0
 seaborn
 matplotlib
+streamlit~=1.11.0
