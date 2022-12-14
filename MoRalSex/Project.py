@@ -144,8 +144,6 @@ df6 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if x > 60])
 
 
 fig = px.pie(values = [df12, df23, df34, df45, df56, df6], names = ["18-20", "20-30", "30-40", "40-50", "50-60", "60+"], title = "Age in percentage", color_discrete_sequence=px.colors.sequential.RdBu)
-fig.update_traces(textposition='inside')
-fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
 st.pyplot(fig)
 
 
