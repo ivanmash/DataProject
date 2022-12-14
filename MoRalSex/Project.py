@@ -196,7 +196,7 @@ fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
 st.plotly_chart(fig)
 
 
-st.subheader("As we can see from the pie-chart, the most popular sex in this survey is men.")
+st.subheader("As we can see from the pie-chart, the most popular sex in this survey is women.")
 
 # In[23]:
 
