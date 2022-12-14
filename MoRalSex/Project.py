@@ -201,7 +201,7 @@ st.header("In general, people mostly do anal sex and for them, it is not importa
 fig = px.pie(data, values = data["Sex"].value_counts(), names = data["Sex"].unique(), title = "Sex comparison", color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside')
 fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
-st.pyplot(fig)
+fig.show()
 
 
 st.subheader("As we can see from the pie-chart, the most popular sex in this survey is men.")
