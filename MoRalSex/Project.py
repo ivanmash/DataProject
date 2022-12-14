@@ -146,7 +146,7 @@ df6 = sum([data.loc[data.Age == x, 'Age'].count() for x in unique if x > 60])
 fig = px.pie(values = [df12, df23, df34, df45, df56, df6], names = ["18-20", "20-30", "30-40", "40-50", "50-60", "60+"], title = "Age in percentage", color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside')
 fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
-fig.show()
+st.plotly_chart(fig)
 
 
 st.subheader("The biggest number of people, who took the survey, were from age 40 to 50 y.o.")
@@ -201,7 +201,7 @@ st.header("In general, people mostly do anal sex and for them, it is not importa
 fig = px.pie(data, values = data["Sex"].value_counts(), names = data["Sex"].unique(), title = "Sex comparison", color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside')
 fig.update_layout(uniformtext_minsize=12, uniformtext_mode='hide')
-fig.show()
+st.plotly_chart(fig)
 
 
 st.subheader("As we can see from the pie-chart, the most popular sex in this survey is men.")
