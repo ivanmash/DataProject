@@ -7,7 +7,7 @@
 import streamlit as st
 
 
-st.header("Getting ready")
+st.title("Getting ready")
 
 st.subheader("This data set was provided by sex toys shop Sexy Elephant.")
 
